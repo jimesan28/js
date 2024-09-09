@@ -26,9 +26,9 @@ const questions = {
         { letter: "B", option: "Vibrante" }
     ],
     budgets: [
-        { letter: "A", option: "Bajo" },
-        { letter: "B", option: "Medio" },
-        { letter: "C", option: "Alto" }
+        { letter: "A", option: "Bajo (Menos de 500)" },
+        { letter: "B", option: "Medio (Entre 500 y 1000)" },
+        { letter: "C", option: "Alto (Más de 1000)" }
     ],
     sizes: [
         { letter: "A", option: "pequeña" },
