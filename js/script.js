@@ -54,7 +54,7 @@ function promptOptions(question, options) {
 }
 
 function collectAnswers() {
-    console.log("Buscando tu guitarra ideal..");
+    console.log();
     
     answers.musicType = promptOptions("1. ¿Qué tipo de música te gusta tocar? Por favor, ingresa la letra de la opcion que elijas!", questions.musicTypes);
     answers.guitarStyle = promptOptions("2. ¿Prefieres una guitarra eléctrica o acústica? Por favor, ingresa la letra de la opcion que elijas!", questions.guitarStyles);
