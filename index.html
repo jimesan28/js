@@ -33,11 +33,58 @@
     </header>
     <main>
         <section>
-            <h1> Here Come The Tune </h1>
+            <h1> Here Comes The Tune </h1>
         </section>
         <section>
             <h2>Guitarras que inspiran generaciones</h2>
             <article>
+                <h3>¿No sabes cual es tu guitarra perfecta? ¡Responde estas preguntas y te ayudamos!</h3>
+                <form>
+                    <div>
+                        <p>1. ¿Qué tipo de música te gusta tocar?</p>
+                        <label><input type="radio" name="music-type" value="rock"> Rock</label><br>
+                        <label><input type="radio" name="music-type" value="pop"> Pop</label><br>
+                        <label><input type="radio" name="music-type" value="blues"> Blues</label><br>
+                        <label><input type="radio" name="music-type" value="folk"> Folk</label><br>
+                    </div>
+            
+                    <div>
+                        <p>2. ¿Prefieres una guitarra eléctrica o acústica?</p>
+                        <label><input type="radio" name="guitar-style" value="electric"> Eléctrica</label><br>
+                        <label><input type="radio" name="guitar-style" value="acoustic"> Acústica</label><br>
+                    </div>
+            
+                    <div>
+                        <p>3. ¿Te gustan las guitarras con un sonido más suave o más vibrante?</p>
+                        <label><input type="radio" name="sound" value="smooth"> Suave</label><br>
+                        <label><input type="radio" name="sound" value="bright"> Vibrante</label><br>
+                    </div>
+            
+                    <div>
+                        <p>4. ¿Cuál es tu presupuesto aproximado(USD)?</p>
+                        <label><input type="radio" name="budget" value="low"> Bajo (menos de $500)</label><br>
+                        <label><input type="radio" name="budget" value="medium"> Medio ($500 - $1000)</label><br>
+                        <label><input type="radio" name="budget" value="high"> Alto (más de $1000)</label><br>
+                    </div>
+            
+                    <div class="question">
+                        <p>5. ¿Qué tamaño de guitarra prefieres?</p>
+                        <label><input type="radio" name="size" value="small"> Pequeña</label><br>
+                        <label><input type="radio" name="size" value="medium"> Mediana</label><br>
+                        <label><input type="radio" name="size" value="large"> Grande</label><br>
+                    </div>
+            
+                    <div class="question">
+                        <p>6. ¿Cuál de estos artistas es tu favorito?</p>
+                        <label><input type="radio" name="artist" value="george_harrison"> George Harrison</label><br>
+                        <label><input type="radio" name="artist" value="paul_mccartney"> Paul McCartney</label><br>
+                        <label><input type="radio" name="artist" value="eric_clapton"> Eric Clapton</label><br>
+                        <label><input type="radio" name="artist" value="brian_may"> Brian May</label><br>
+                        <label><input type="radio" name="artist" value="slash"> Slash</label><br>
+                    </div>
+            
+                    <button type="button" onclick="recommendGuitar()">¡Descubre tu guitarra perfecta!</button>
+                </form>
 
             </article>
         </section>
