@@ -56,12 +56,12 @@ function promptOptions(question, options) {
 function collectAnswers() {
     console.log("Buscando tu guitarra ideal..");
     
-    answers.musicType = promptOptions("1. ¿Qué tipo de música te gusta tocar?", questions.musicTypes);
-    answers.guitarStyle = promptOptions("2. ¿Prefieres una guitarra eléctrica o acústica?", questions.guitarStyles);
-    answers.sound = promptOptions("3. ¿Te gustan las guitarras con un sonido más suave o más vibrante?", questions.sounds);
-    answers.budget = promptOptions("4. ¿Cuál es tu presupuesto aproximado(USD)?", questions.budgets);
-    answers.size = promptOptions("5. ¿Qué tamaño de guitarra prefieres?", questions.sizes);
-    answers.artist = promptOptions("6. ¿Cuál de estos artistas es tu favorito?", questions.artists);
+    answers.musicType = promptOptions("1. ¿Qué tipo de música te gusta tocar? Por favor, ingresa la letra de la opcion que elijas!", questions.musicTypes);
+    answers.guitarStyle = promptOptions("2. ¿Prefieres una guitarra eléctrica o acústica? Por favor, ingresa la letra de la opcion que elijas!", questions.guitarStyles);
+    answers.sound = promptOptions("3. ¿Te gustan las guitarras con un sonido más suave o más vibrante? Por favor, ingresa la letra de la opcion que elijas!", questions.sounds);
+    answers.budget = promptOptions("4. ¿Cuál es tu presupuesto aproximado(USD)? Por favor, ingresa la letra de la opcion que elijas!", questions.budgets);
+    answers.size = promptOptions("5. ¿Qué tamaño de guitarra prefieres? Por favor, ingresa la letra de la opcion que elijas!", questions.sizes);
+    answers.artist = promptOptions("6. ¿Cuál de estos artistas es tu favorito? Por favor, ingresa la letra de la opcion que elijas!", questions.artists);
 
     console.log(answers);
 }
@@ -79,11 +79,6 @@ function recommendGuitar() {
             alert("Por favor, responde en todas las preguntas!");
             return;
         }
-
-        let recommendedGuitar = "No tenemos la guitarra perfecta para vos :( ";
-        
-
-        console.log();
 
         if (guitarStyle === "A") {  // Eléctrica
             if (musicType === "A") {  // Rock
